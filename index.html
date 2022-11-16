@@ -1,5 +1,997 @@
-<html>
-  
-  <p>welcome to Liketrex Technology</p>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1, minimum-scale=1" />
+<link rel="shortcut icon" href="assets/favicon.png" mce_href="assets/favicon.png" type="image/x-icon" />
+<title>Liketrex Technology</title>
+<meta name="description" content="Liketrex Technology" />
+<meta property="og:url" content="https://www.liketrex.com" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Liketrex Technology" />
+<meta property="og:description" content="Liketrex Technology" />
+<meta property="og:image" content="assets/liketrex-logo.png" />
+
+<link rel="stylesheet" href="assets/bootstrap-psmrunal.min.css">
+<link rel="stylesheet" href="assets/global.min.css">
+<!-- header common style block -->
+<link rel="stylesheet" href="assets/wsc-header-footer-2020.min.css" />
+<link rel="stylesheet" href="assets/header-footer.css">
+<style>
+:root {
+ --gradient-deg: 270deg;
+ --btngradient-deg1: 270deg;
+ --btngradient-deg2: 90deg;
+}
+.btn-gradient {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 1rem 2rem;
+	transform-style: preserve-3d;
+	color: #ffffff !important;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+	position: relative;
+}
+.btn-gradient::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 3rem;
+	opacity: .7;
+	transform: translateZ(-1px);
+	transition: border-radius, opacity;
+	transition-duration: .3s, .1s;
+}
+.btn-gradient::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 1rem;
+	top: 1rem;
+	border-radius: 3rem;
+	opacity: .6;
+	filter: blur(50px);
+	transform: translateZ(-1px);
+	transition: border-radius;
+	transition-duration: .3s;
+}
+.btn-gradient:hover::after {
+	border-radius: 0.5rem;
+	opacity: 1;
+}
+.btn-gradient:hover::before {
+	border-radius: 0.5rem;
+}
+.btn-gradient.gradient-1::before {
+	background: linear-gradient(270deg, #00FFFD -10.8%, #EC00FF 51.8%, #FF6700 111.32%), #FFFFFF;
+}
+.btn-gradient.gradient-2::before {
+	background: linear-gradient(90deg, #006DFF -6.79%, #FFE782 100%);
+}
+.btn-gradient.gradient-3::before {
+	background: linear-gradient(90deg, #00B0FF 0%, #66FF80 97.68%);
+}
+.btn-gradient.gradient-4::before {
+	background: linear-gradient(90deg, #66CCFF 0%, #8C33FF 97.68%);
+}
+.btn-gradient.gradient-1::after {
+	background: linear-gradient(var(--btngradient-deg1, 270deg), #00FFFD -10.8%, #EC00FF 51.8%, #FF6700 111.32%), #FFFFFF;
+}
+.btn-gradient.gradient-2::after {
+	background: linear-gradient(var(--btngradient-deg2, 90deg), #006DFF -6.79%, #FFE782 100%);
+}
+.btn-gradient.gradient-3::after {
+	background: linear-gradient(var(--btngradient-deg2, 90deg), #00B0FF 0%, #66FF80 97.68%);
+}
+.btn-gradient.gradient-4::after {
+	background: linear-gradient(var(--btngradient-deg2, 90deg), #66CCFF 0%, #8C33FF 97.68%);
+}
+</style>
+<style>
+.bg-main {
+	position: relative;
+}
+.bg-main::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+ height: calc(100% + (100vw * 9 / 16));
+	min-height: 100vh;
+	left: 0;
+	top: 0;
+	background: linear-gradient(var(--gradient-deg), rgba(0, 255, 253, 0.6) 0%, rgba(236, 0, 255, 0.6) 51.26%, rgba(255, 103, 0, 0.6) 100%);
+}
+.embed-responsive-16by9 video {
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+.embed-responsive.expand {
+	overflow: visible;
+}
+.embed-responsive.expand video {
+	height: auto !important;
+	right: 0 !important;
+	top: 0 !important;
+	left: auto !important;
+	bottom: auto !important;
+	transition-property: width, height;
+	transition-timing-function: linear;
+	transition-duration: .3s;
+	object-fit: fill;
+}
+.clip_video_container {
+ --translate-y: 0;
+	top: 0;
+	position: sticky !important;
+	transform: matrix(1, 0, 0, 1, 0, var(--translate-y));
+	margin: 0 auto;
+	max-width: 2560px;
+}
+.scroll-move-up {
+ --translate-y: 0;
+ --opacity: 1;
+	opacity: var(--opacity);
+	transform: matrix(1, 0, 0, 1, 0, var(--translate-y));
+}
+#clip_video {
+ --clip-h: 0;
+ --clip-v: 0;
+ --round: 0;
+	position: absolute;
+	width: 100%;
+	max-height: 100%;
+	top: 0;
+	margin: auto;
+	opacity: 0;
+	transition: clip 50ms, clip-path 50ms;
+	clip-path: inset(var(--clip-v) var(--clip-h) round var(--round));
+	-webkit-clip-path: inset(var(--clip-v) var(--clip-h) round var(--round));
+}
+#clip_video video {
+	position: relative;
+}
+.center-fadein {
+ --translate-y: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	will-change: transform;
+	transition: opacity .3s;
+	transform: matrix(1, 0, 0, 1, 0, var(--translate-y));
+}
+.center-fadein.show {
+	opacity: 1;
+}
+.font-size-96 {
+	font-size: 24px;
+	line-height: .86em;
+	letter-spacing: -.06em;
+}
+.font-size-36 {
+	font-size: 24px;
+	line-height: 1.19;
+	letter-spacing: -.03em;
+}
+.fade-in-up {
+	opacity: 0;
+	transform: translate3d(0, 50%, 0)
+}
+.fade-in-up.active {
+	animation: fadeInUp 1s .5s both;
+}
+.scroll-fade-in {
+ --translate-y: -50;
+ --opacity: 0;
+	opacity: var(--opacity);
+	transform: matrix(1, 0, 0, 1, 0, var(--translate-y));
+	transition-duration: 0ms;
+}
+.scroll-fade-in-icons img {
+ --translate-y: -50;
+ --opacity: 0;
+	opacity: var(--opacity);
+	transform: matrix(1, 0, 0, 1, 0, var(--translate-y));
+}
+.diff-icons img {
+	width: 32px;
+}
+.scroll-fade-in-img {
+ --translate-y: -50;
+ --opacity: 0;
+ --scale: 0.8;
+	opacity: var(--opacity);
+	transform: matrix(var(--scale), 0, 0, var(--scale), 0, var(--translate-y));
+}
+
+@media (min-width: 1280px) {
+.psm-header2020.logo-extra .psm-header202004-navbar-wondershare a.psm-header2020-navbar-link, .psm-header2020.logo-extra .psm-header202004-navbar-wondershare .psm-header2020-navbar-brand {
+	height: 64px;
+	line-height: 64px;
+}
+.psm-header2020.logo-extra .psm-header2020-navbar-master .psm-header2020-navbar-brand a {
+	width: 128px;
+	height: 128px;
+}
+.font-size-36 {
+	font-size: 36px;
+}
+.font-size-xl-extra {
+	font-size: 22px;
+}
+}
+ @keyframes fadeInUp {
+ 0% {
+ opacity: 0;
+ -webkit-transform: translate3d(0, 50%, 0);
+ transform: translate3d(0, 50%, 0)
+}
+ to {
+ opacity: 1;
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0)
+}
+}
+
+@media all and (-ms-high-contrast:none), (-ms-high-contrast:active) {
+.bg-main::before {
+	height: 200vh;
+	background: linear-gradient(270deg, rgba(0, 255, 253, 0.8) 0%, rgba(236, 0, 255, 0.8) 51.26%, rgba(255, 103, 0, 0.8) 100%);
+}
+.btn-gradient {
+	border-radius: 50rem;
+}
+.btn-gradient.gradient-1 {
+	background: linear-gradient(270deg, #00FFFD -10.8%, #EC00FF 51.8%, #FF6700 111.32%), #FFFFFF;
+}
+.btn-gradient.gradient-2 {
+	background: linear-gradient(90deg, #006DFF -6.79%, #FFE782 100%);
+}
+.btn-gradient.gradient-3 {
+	background: linear-gradient(90deg, #00B0FF 0%, #66FF80 97.68%);
+}
+.btn-gradient::before, .btn-gradient::after {
+	display: none;
+}
+}
+
+@media only screen and (min-aspect-ratio: 21/9) {
+.clip_video_container {
+	max-width: 1920px;
+}
+}
+
+@media (min-width: 1280px){
+.psm-header2020 .psm-header202004-navbar-wondershare .psm-header2020-navbar-item {
+    padding: 0 3px;
+}}
+</style>
+
+</head>
+
+<body>
+
+<header class="psm-header2020">
+  <nav class="psm-header2020-navbar-master psm-header202004-navbar-wondershare">
+    <div class="psm-header2020-container">
+      <div class="psm-header2020-navbar-content">
+        <div class="psm-header2020-navbar-brand"> 
+          <a href="index.html" target="_blank">
+            <img src="assets/liketrex-logo.png" style="height: auto; width: 100px; padding: 10px 0 12px 0;">
+          </a> 
+        </div>
+        
+        <button class="psm-header2020-navbar-collapse-toggle" type="button" aria-expanded="false">
+        <svg class="psm-header2020-navbar-collapse-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+          <path d="M4 6H20M20 12L4 12M20 18H4" stroke="white" stroke-width="1.5"></path>
+        </svg>
+        <svg class="psm-header2020-navbar-collapse-toggle-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+          <path d="M18 18L12 12M6 6L12 12M18 6L12 12M6 18L12 12" stroke="white" stroke-width="1.5"></path>
+        </svg>
+        </button>
+
+        <div class="psm-header2020-navbar-collapse">
+          <ul class="psm-header2020-navbar-nav active_menu">
+            <li class="psm-header2020-navbar-item">
+              <a class="psm-header2020-navbar-link" href="index.html" target="_blank">Home</a> </li>
+
+            <li class="psm-header2020-navbar-item">
+              <a class="psm-header2020-navbar-link" href="contact.html" target="_blank">Contact Us</a> </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div class="sub-nav">
+    <div class="container text-black pr-0">
+      <div id="scroll-nav" class="d-flex align-items-center justify-content-center flex-nowrap text-nowrap overflow-auto py-3">
+          <a href="index.html" class="mr-5">Home</a>
+          <a href="contact.html" class="mr-5">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+
+<main id="psm-main" class="psm-main px-0" style="overflow-x: visible;">
+  <section class="bg-main">
+    <div class="container text-center text-white mb-lg-0 mb-5 pt-5 " style="position: relative; z-index: 19;">
+      <div class="pt-lg-5 mx-auto scroll-move-up" style="max-width: 689px;">
+        <h1 class="family-inherit">Dive into the</h1>
+        <div class="px-5"><img src="assets/Creative-Future.webp" class="img-fluid" width="452px" alt="psmrunal"> </div>
+        <p class="font-size-extra py-3" style="font-family: inherit;letter-spacing: -.01em;">We develope software that empowers you to dream bigger.</p>
+        <a href="#solutions" class="btn-custom white rounded-pill">Our Services</a> </div>
+    </div>
+  </section>
+  <div class="embed-responsive embed-responsive-16by9 bg-cover clip_video_container">
+    <div id="clip_video">
+      <video poster="assets/Like.png" preload loop muted webkit-playsinline playsinline >
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-information-blocks-virtual-world-concept-30286-large.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="center-fadein d-flex text-white flex-column justify-content-center align-items-center text-center">
+      <div class="font-size-title-52 font-weight-bold">We Make Products That <br>
+        <img src="assets/Imress-white.svg" style="height: 1.75em;" alt="Impress"></div>
+    </div>
+  </div>
+  <div class="padding-control pt-lg-5" style="position: relative;background-color: #ffffff;">
+    <section class="py-5 mb-lg-0 mb-n5">
+      <div class="py-5 border-radius" style="background: linear-gradient(270deg, rgba(0, 255, 253, 0.2) 0%, rgba(236, 0, 255, 0.2) 51.26%, rgba(255, 103, 0, 0.2) 100%);">
+        <div class="container text-lg-left text-center" id="video-width-control">
+
+          <div class="row align-items-center py-lg-5">
+            <div class="col-lg-5 order-lg-2 py-3 d-lg-flex justify-content-center">
+              <div class="">
+                <div class="scroll-fade-in" data-multiple="2">
+                  <div class="font-size-36 font-weight-bold mb-4">Inspiration <br class="d-xl-inline d-none">
+                    Is Out There</div>
+                  <p class="font-size-large mb-xl-5 mb-4" style="line-height: 1.56;">We provide solutions in web A full-service web<br class="d-xl-inline d-none">design and digital marketing company in Pune.<br class="d-xl-inline d-none">specializing in web development, SEO, and <br class="d-xl-inline d-none">PPC to grow your revenue.<br class="d-xl-inline d-none">Guaranteed.
+                     </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 order-lg-1 py-3 scroll-fade-in-img">
+              <div class="position-relative border-radius-video">
+                <video poster="assets/Like.png" preload loop muted webkit-playsinline playsinline class="show-to-play" style="max-width: 100%;">
+                  <source src="https://assets.mixkit.co/videos/preview/mixkit-luminous-floating-blocks-loop-video-19609-large.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center py-lg-5">
+            <div class="col-lg-5 py-3 d-lg-flex justify-content-end">
+              <div class="">
+                <div class="scroll-fade-in" data-multiple="2">
+                  <div class="font-size-36 font-weight-bold mb-4">
+                  	Who we are
+                  </div>
+                  <p class="font-size-large mb-xl-5 mb-4 pr-xxl-5" style="line-height: 1.56;">
+                    Creativity is in our DNA. We redefine 
+                    <br class="d-xl-inline d-none">
+                    the possibilities of digital experiences 
+                    <br class="d-xl-inline d-none">
+                    via game-changing innovations.
+                    <br class="d-xl-inline d-none">
+                    Our technology is powerful, that's how 
+                    <br class="d-xl-inline d-none">
+                    we provide simple and convenient software.
+                  </p>
+                </div>
+                <div class="scroll-fade-in"><a href="contact.html" class="btn-gradient gradient-1" >Contact Us</a></div>
+              </div>
+            </div>
+            <div class="col-lg-7 py-3 scroll-fade-in-img">
+              <div class="mx-auto" style="max-width: 570px;">
+                <div class="position-relative border-radius-video">
+                  <video poster="https://cdn.pixabay.com/photo/2017/06/27/11/48/team-spirit-2447163_1280.jpg" preload loop muted webkit-playsinline playsinline class="show-to-play" style="max-width: 100%;">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-open-office-space-914-large.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="solutions" class="py-5 mb-lg-0 mb-n5">
+      <div class="py-5 border-radius" style="background: linear-gradient(90deg, rgba(140, 51, 255, 0.2) 0%, rgba(102, 204, 255, 0.2) 97.68%);">
+        <div class="container py-lg-2 text-center">
+          
+          <div class="scroll-fade-in" data-multiple="2">
+            <div class="font-size-36 font-weight-bold">
+            	Move Your Ideas Forward with us
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="mb-lg-0 mb-n5">
+    	<div class="row row-cols-lg-3 row-cols-1 mt-n">
+
+    		<div class="col pb-3">
+		      <div class="border-radius" style="background: linear-gradient(90deg, rgba(0, 255, 253, 0.2) 0%, rgba(236, 0, 255, 0.2) 51.26%, rgba(255, 103, 0, 0.2) 100%);">
+		        <div class="container py-lg-5 text-center">
+		          <div class="scroll-fade-in" data-multiple="2">
+		            <div class="font-size-36 font-weight-bold mb-3">
+		            	Graphics Solutions
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    		<div class="col pb-3">
+		      <div class="border-radius" style="background: linear-gradient(90deg, rgba(140, 51, 255, 0.2) 0%, rgba(102, 204, 255, 0.2) 97.68%);">
+		        <div class="container py-lg-5 text-center">
+		          <div class="scroll-fade-in" data-multiple="2">
+		            <div class="font-size-36 font-weight-bold mb-3">
+		            	Designing Ecosystems
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    		<div class="col pb-3">
+		      <div class="border-radius" style="background: linear-gradient(90deg, rgba(0, 109, 255, 0.2) 0%, rgba(255, 231, 130, 0.2) 100%);">
+		        <div class="container py-lg-5 text-center">
+		          <div class="scroll-fade-in" data-multiple="2">
+		            <div class="font-size-36 font-weight-bold mb-3">
+		            	Data Visualization
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    		<div class="col pb-3">
+		      <div class="border-radius" style="background: linear-gradient(90deg, rgba(140, 51, 255, 0.2) 0%, rgba(102, 204, 255, 0.2) 97.68%);">
+		        <div class="container py-lg-5 text-center">
+		          <div class="scroll-fade-in" data-multiple="2">
+		            <div class="font-size-36 font-weight-bold mb-3">
+		            	Virtual and Mixed Reality
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    		<div class="col pb-3">
+		      <div class="border-radius" style="background: linear-gradient(90deg, rgba(0, 109, 255, 0.2) 0%, rgba(255, 231, 130, 0.2) 100%);">
+		        <div class="container py-lg-5 text-center">
+		          <div class="scroll-fade-in" data-multiple="2">
+		            <div class="font-size-36 font-weight-bold mb-3">
+		            	Product and landing pages
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+    		<div class="col pb-3">
+		      <div class="border-radius" style="background: linear-gradient(90deg, rgba(0, 255, 253, 0.2) 0%, rgba(236, 0, 255, 0.2) 51.26%, rgba(255, 103, 0, 0.2) 100%);">
+		        <div class="container py-lg-5 text-center">
+		          <div class="scroll-fade-in" data-multiple="2">
+		            <div class="font-size-36 font-weight-bold mb-3">
+		            	Future vision exercises
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+
+		  </div>
+    </section>
+<!--     background: linear-gradient(90deg, rgba(102, 255, 128, 0.2) 0%, rgba(0, 176, 255, 0.2) 97.68%); -->
+
+    <section class="py-5">
+      <div class="container pb-lg-5">
+        <!-- <div class="text-center h2 mb-5 py-lg-5" style="font-family: inherit;">Learn More About PS Mrunal</div> -->
+        <div class="row row-cols-lg-3 row-cols-1 mt-n3">
+
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/05/04/16/10/user-interface-6229126_1280.jpg" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">UI/UX</div>
+<!--                   <div class="font-size-super mb-4 multi-ellipsis">
+                  	Drive business productivity and communications with
+                  	powerful UX, diagramming, and document solutions.
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a> --> 
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/04/29/17/52/user-interface-6217096_1280.png" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">Static Website</div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2020/05/21/11/13/shopping-5200288_1280.jpg" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">E-Commerce Application</div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/05/05/04/14/video-6230116_1280.jpg" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">Media streaming application</div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/05/01/11/16/post-6220795_1280.jpg" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">Blockchain
+                  </div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/12/20/12/45/woman-6882918_1280.jpg" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">Metaverse Development
+                  </div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/04/20/17/43/graph-6194509_1280.png" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">Software Development
+                  </div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://cdn.pixabay.com/photo/2021/04/30/04/30/youtube-6217880_1280.jpg" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">IoT Development
+                  </div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://img.freepik.com/free-vector/blue-technology-circuit-diagram-with-glowing-line-lights_1017-17266.jpg?w=900" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">Artificial Intelligence
+                  </div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+          <div class="col py-3"> 
+          	<!-- <a href="news/#" target="_blank"> -->
+            <div class="h-100 border-gray border-radius overflow-hidden bg-white hover-up d-flex flex-column justify-content-between">
+              <div> 
+              	<img data-src="https://img.freepik.com/free-photo/colorful-3d-shapes-vaporwave-style_23-2148981126.jpg?w=900" class="w-100 lazy-img" alt="psmrunal">
+                <div class="px-3 pt-3 m-xl-3">
+                  <div class="h3 mb-3">NFT Marketplace</div>
+                  <!-- <div class="font-size-super mb-4 multi-ellipsis">
+                  	
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <!-- </a>  -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<script>
+    (function() {
+      var scrollElement = document.scrollingElement || document.documentElement || document.body
+      var scroll_move_up = document.querySelector('.scroll-move-up')
+      var clip_video = document.querySelector('#clip_video')
+      var clip_video_player = clip_video.children[0]
+      var clip_video_parent = clip_video.parentElement
+      var scroll_fade_in = document.querySelectorAll('.scroll-fade-in')
+      var scroll_fade_in_icons = document.querySelectorAll('.scroll-fade-in-icons')
+      var scroll_fade_in_imgs = document.querySelectorAll('.scroll-fade-in-img')
+      var fade_in = document.querySelector('.center-fadein')
+      var fade_in_up = document.querySelectorAll('.fade-in-up')
+      var slides_satck = document.querySelectorAll('.lottie-video')
+      var video_control_width, clip_video_rect, window_view
+      var threshold = 400, clipRatio = 0.14, clip_h = 96, scrollRatio = 1 / 0.6, cliped = false, lottie_loaded = false
+      var isIE = window.ActiveXObject || "ActiveXObject" in window || navigator.userAgent.indexOf('Trident') > -1
+      
+
+      init ()
+      function init () {
+        window_view = getViewSize()
+        clip_video_rect = clip_video.getBoundingClientRect()
+        video_control_width = document.querySelector('#video-width-control').getBoundingClientRect().width - 30 
+        scrollElement.scrollTop === 0 && (clipVideo(clipRatio) ,fixedVideo(clip_video_parent.getBoundingClientRect().top, clip_video_rect.height, 0))
+        scrollFadeInit ()
+        !lottie_loaded && loadLottie()
+      }
+
+      function loadLottie () {
+        for (var i = 0, len = slides_satck.length; i < len; i++) {
+          if (slides_satck[i].getBoundingClientRect().top <= window_view.height ) {
+            lottie_loaded = true
+            getLottie()
+            return
+          }
+        }
+      }
+
+      function loadLazyImgs () {
+        lazy_imgs && lazy_imgs.forEach( function (el, index) {
+          var top = el.getBoundingClientRect().top
+          if (top <= window_view.height) {
+            el.src = el.getAttribute('data-src')
+            lazy_imgs.splice(index, 1)
+            lazy_imgs = lazy_imgs.length === 0 ? null : lazy_imgs
+          }
+        })
+      }
+      
+      var playList = [], listenList = [], lazy_imgs = []
+      document.querySelectorAll('video.show-to-play').forEach( function (el) { playList.push(el) } )
+      document.querySelectorAll('.lazy-img').forEach( function (el) { lazy_imgs.push(el) } )
+
+      function scrollFadeInit () {
+        scroll_fade_in.length > 0 && scroll_fade_in[0].getBoundingClientRect().top <= window_view.height &&
+        scroll_fade_in.forEach( function (el) {
+          el.getBoundingClientRect().top <= window_view.height && scrollFadeIn(el)
+        } )
+
+        scroll_fade_in_icons.length > 0 && scroll_fade_in_icons[0].getBoundingClientRect().top <= window_view.height &&
+        scroll_fade_in_icons.forEach( function (el) {
+          [].forEach.call(el.children, function (el, index) {
+            el.getBoundingClientRect().top <= window_view.height && scrollFadeIn(el, index)
+          })
+        } )
+
+        scroll_fade_in_imgs.length > 0 && scroll_fade_in_imgs[0].getBoundingClientRect().top <= window_view.height &&
+        scroll_fade_in_imgs.forEach ( function (el) {
+          el.getBoundingClientRect().top <= window_view.height && scrollFadeIn(el, 0, true)
+        } )
+      }
+      //监听滚动元素队列
+      function scrollFadeIn (el, delta, isImg) {
+        requestAnimationFrame ( function () {
+          delta = delta || 0
+          var rect = el.getBoundingClientRect()
+          var vh = window_view.height / (scrollRatio + delta * 0.1)
+          if (rect.top <= vh) {
+            el.style.setProperty('--opacity', 1)
+            el.style.setProperty('--translate-y', 0)
+            return
+          }
+
+          var ratio = (rect.top - vh) / vh
+          ratio = ratio <= 1 ? ratio : 1
+          var multi = +el.getAttribute('data-multiple')
+          multi = multi || 1
+          el.style.setProperty('--opacity', (1 - 1 * ratio))
+          el.style.setProperty('--translate-y', 50 * ratio * multi)
+          isImg && el.style.setProperty('--scale', 1 - 0.2 * ratio)
+        } )
+      }
+      
+      loop(0, window_view.width, loopAnimation(null, 10), function (previousScrollTop, scrollTop) {
+        clipVideo(clipRatio, clip_video_rect, scrollTop )
+        
+        var top = clip_video_parent.getBoundingClientRect().top
+
+        window_view.width > 992 && fixedVideo(top, clip_video_rect.height, scrollTop)
+
+        playList && playList.forEach( function (el, index) {
+          var top = el.getBoundingClientRect().top
+          if (top <= window_view.height) {
+            el.play()
+            playList.splice(index, 1)
+            playList = playList.length === 0 ? null : playList
+          }
+        })
+
+        scrollFadeInit ()
+        loadLazyImgs()
+        !lottie_loaded && loadLottie()
+      })
+      //模拟滚动
+      function loop(previousScrollTop, previousClientWidth, animaitonCallback, callback) {
+        function repeat() {
+          requestAnimationFrame( function () {
+            loop(previousScrollTop, previousClientWidth, animaitonCallback, callback)
+          } )
+        }
+        var scrollTop = scrollElement.scrollTop
+        var clientWidth = getViewSize().width
+        if( previousScrollTop === scrollTop ) {
+          animaitonCallback && animaitonCallback()
+          return repeat()
+        }
+        else {
+          callback && callback( previousScrollTop, scrollTop )
+          previousScrollTop = scrollTop
+        }
+
+        if (previousClientWidth !== clientWidth) {
+          init ()
+          clipVideo(clipRatio)
+          previousClientWidth =  clientWidth
+        }
+
+        return repeat()
+      }
+
+      //循环渐变动画
+      function loopAnimation( el, duration ) {
+        var start = start1 =  270, start2 = 90
+        var gap = (360 / (1000 * duration)) * 16
+        var btngap = (360 / (1000 * duration)) * 16
+
+        var main = document.querySelector('.bg-main'),
+            btns_1 = document.querySelectorAll('.gradient-1'), len_1 = btns_1.length,
+            btns_2 = document.querySelectorAll('.gradient-2, .gradient-3,gradient-4'), len_2 = btns_2.length
+
+        return function () {
+          if (window_view.width < 992) return
+          start += gap
+          start1 += ((start1 >= 350 && start1 <= 380) || (start1 >= 520 && start1 <= 550) ) ? btngap / 10 : btngap
+          start2 += ((start2 >= 170 && start2 <= 200) || (start2 >= 340 && start2 <= 370) ) ? btngap / 10 : btngap
+          start = (start - 270) > 360 ? 270 : start
+          start1 = (start1 - 270) > 360 ? 270 : start1
+          start2 = (start2 - 90) > 360 ? 90 : start2
+          main.style.setProperty('--gradient-deg', start + 'deg')
+          for (var i = 0; i < len_1; i++) {
+            btns_1[i].style.setProperty('--btngradient-deg1', start1 + 'deg')
+          }
+
+          for (var i = 0; i < len_2; i++) {
+            btns_2[i].style.setProperty('--btngradient-deg2', start2 + 'deg')
+          }
+        }
+      }
+      //裁剪视频
+      function clipVideo( limit, rect, scrollTop ) {
+        clip_video_player.paused && clip_video_player.play()
+        scrollTop = scrollTop || scrollElement.scrollTop
+        rect = rect || clip_video.getBoundingClientRect()
+
+        var top, right, bottom, left, ratio
+
+        limit = limit || 0.14
+        ratio = limit -  scrollTop / rect.width
+        ratio = ratio >= 0 ? ratio : 0
+
+        top = ratio * rect.height, 
+        right = (rect.width - ratio * rect.width), 
+        bottom = (rect.height - ratio * rect.height), 
+        left = ratio * rect.width
+
+
+        if (isIE) {
+          clip_video.style.clip = 'rect(' + top + 'px ' + right + 'px ' + bottom + 'px ' + left + 'px)'
+        }else {
+          var radius = ratio * 100
+          radius = radius >= 10 ? 10 : radius
+          clip_video.style.setProperty('--clip-v', top + 'px')
+          clip_video.style.setProperty('--clip-h', left + 'px')
+          clip_video.style.setProperty('--round', radius + 'px')
+        }
+        !cliped && requestAnimationFrame ( function () {
+          clip_video.style.opacity = 1
+          cliped = true
+        } )
+        ratio === 0 ? fade_in.classList.add('show') : fade_in.classList.remove('show')
+      }
+
+      //固定视频
+      function fixedVideo ( y, height, scrollTop ) {
+        var top = (clipRatio -  scrollTop / clip_video_rect.width) * clip_video_rect.height
+        if ( window_view.width > 992 ) {
+          var diff = clip_h - top, alpha = 1 - scrollTop / 400
+
+          clip_video_parent.style.setProperty('--translate-y', diff < 0 ? diff : 0)
+          scroll_move_up.style.setProperty('--translate-y', diff >= 0 ? -diff : 0)
+          scroll_move_up.style.setProperty('--opacity', alpha > 0 ? alpha : 0)
+        }
+        fade_in.style.setProperty('--translate-y', top / 2)
+      }
+
+      //控制视频放大及还原
+      function expandV ( el ) {
+        var video = el.children[0]
+        var rect = video.getBoundingClientRect()
+        var width = el.getBoundingClientRect().width
+
+        if(width === rect.width) {
+          fade_in_up.forEach ( function (el) {
+            el.classList.add('active')
+          } )
+          //fade_in_up.classList.add('active')
+          video.paused && video.play()
+        }
+
+        if(rect.top <= threshold && rect.width !== width) {
+          video.style.width = width + 'px'
+          fade_in_up.forEach ( function (el) {
+            el.classList.add('active')
+          } )
+          //fade_in_up.classList.add('active')
+          video.paused && video.addEventListener('transitionend', function () {
+            requestAnimationFrame ( function () {
+              video && video.play()
+              video = null
+            } )
+          })
+        }
+
+        if (rect.top > window_view.height && rect.width !== video_control_width) {
+          if (video.paused) return
+          video.style.width = video_control_width + 'px'
+          fade_in_up.forEach ( function (el) {
+            el.classList.remove('active')
+          } )
+          //fade_in_up.classList.remove('active')
+          var src = video.src
+          video.src = ''
+          video.src = src
+        }
+      }
+
+      function getViewSize () {
+        return {
+          width: window.innerWidth || window.outerWidth,
+          height: window.innerHeight || window.outerHeight
+        }
+      }
+
+      function getLottie() {
+        if (isIE) return
+        var observer = new MutationObserver(animation_loaded)
+        var mutation_count = 0
+
+        if(slides_satck.length === 0) return
+
+        var s = document.createElement('script')
+            s.src = '../neveragain.allstatics.com/2019/assets/vendor/lottie.min.js'
+            s.async = true
+            document.body.appendChild(s)
+
+        s.onload = function () {
+          slides_satck.forEach ( function(el) {
+            observer.observe(el, { childList: true })
+            lottie.loadAnimation({
+                container: el,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: ' ' + el.id + '.json'
+              })
+          } )
+        }
+
+
+        function animation_loaded(mutations) {
+          mutations.forEach(function(mutation) {
+            var sibling = mutation.target.nextElementSibling ? 'nextElementSibling' : 'nextSibling'
+            if (mutation.target[sibling] && mutation.target[sibling].tagName === 'IMG') {
+              mutation.target[sibling].style.display = 'none'
+            }
+          })
+          ++mutation_count >= slides_satck.length && (observer.disconnect(), observer = null)
+        }
+      }
+
+    }())
+  </script>
+<div class="parameter" data-toggle="gotop" data-type="ws2020"></div>
+
+<footer class="psm-footer2020 psm-footer2021">
+
+  <div class="psm-footer2020-bottom psm-footer202004-bottom">
+    <div class="psm-footer2020-container">
+      <div class="psm-footer2020-bottom-content">
+        <div class="psm-footer2020-copyright">
+          <div class="psm-footer2020-copyright-top"> 
+            <b style="margin-right: 10px;"><a class="psm-footer2020-copyright-link" href="contact.html" target="_blank">Contact Us</a></b>
+            <a target="_blank" href="https://in.linkedin.com/company/liketrex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+            </a>
+            </div>
+          <div class="psm-footer2020-copyright-bottom">
+            <p>Copyright © 
+              <span id="copyright-year"></span> 
+              <script> document.querySelector('#copyright-year').outerHTML = new Date().getFullYear() </script> 
+              Liketrex Technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/script/header-footer-2020.js"></script> 
+<script src="assets/script/header-footer-2021.js"></script> 
+
+</body>
 </html>
