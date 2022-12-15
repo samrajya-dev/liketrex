@@ -1,284 +1,728 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <title>Liketrex Technology | Digital Marketing Agency</title>
+    <meta name="description" content="Liketrex Technology | Website Design Development | Digital Marketing Agency">
+    <meta name="keywords" content="website-design-development, website development, website design, corporate, services, creative agency, e-commerce , saas, product landing, software, web studio, creative">
+    <meta name="author" content="Liketrex Technology">
 
-<meta charset="utf-8">
-<meta name="robots" content="noindex, nofollow" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1, minimum-scale=1" />
-<link rel="shortcut icon" href="assets/favicon.png" mce_href="assets/favicon.png" type="image/x-icon" />
-<title>Liketrex Technology</title>
-<meta name="description" content="Liketrex Technology" />
-<meta property="og:url" content="https://www.liketrex.com" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Liketrex Technology" />
-<meta property="og:description" content="Liketrex Technology" />
-<meta property="og:image" content="assets/liketrex-logo.png" />
+    <meta property="og:url" content="https://liketrex.com"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Liketrex Technology"/>
+    <meta property="og:description" content="Liketrex Technology | Digital Marketing Agency" />
+    <meta property="og:image" content="assets/img/liketrex-logo.png" />
 
-<link rel="stylesheet" href="assets/bootstrap-psmrunal.min.css">
-<link rel="stylesheet" href="assets/global.min.css">
-<link rel="canonical" href="https://www.liketrex.com/about.html" />
-<!-- header common style block -->
-<link rel="stylesheet" href="assets/wsc-header-footer-2020.min.css" />
-<link rel="stylesheet" href="assets/header-footer.css">
-<style>
-      .sub-nav {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 1);
-        z-index: 9;
-        font-size: 0.875rem;
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" color="#6366f1" href="assets/favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="white">
+
+  
+    <!-- Scroll down animated button-->
+    <style>
+      .scroll-down-btn {
+        display: inline-block;
+        text-decoration: none;
       }
-      .sub-nav a { color: inherit; display: inline-block;position: relative; padding: 0.25rem 0; }
-
-      .sub-nav a.active::after, .sub-nav .overflow-auto a:hover:after{
+      .scroll-down-btn p {
+        margin-top: 1.25rem;
+        color: white;
+        font-size: .875rem;
+        font-weight: 500;
+        letter-spacing: .375rem;
+        text-indent: .375rem;
+        animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
+      }
+      .mouse {
+        background: #2c333e linear-gradient(transparent 0%, transparent 50%, white 50%, white 100%);
+        position: relative;
+        width: 38px;
+        height: 65px;
+        margin: 0 auto;
+        border-radius: 6rem;
+        background-size: 100% 200%;
+        animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+      }
+      .mouse:before, .mouse:after {
         content: '';
         position: absolute;
-        width: 100%;
-        border-bottom: 1px solid #000000;
-        left: 0;
+        top: 0;
+        right: 0;
         bottom: 0;
+        left: 0;
+        margin: auto;
       }
-      .sub-nav.fixed { border-bottom: 1px solid #dee2e6; }
-    .bg-brand {
-      background-repeat: no-repeat;
-      background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(270deg, rgba(0, 255, 253, 0.4) 0%, rgba(236, 0, 255, 0.4) 51.26%, rgba(255, 103, 0, 0.4) 100%);
-    }
-    @media (min-width: 992px) {
-      .bg-brand {
-        min-height: 600px;
+      .mouse:before {
+        width: 34px;
+        height: 61px;
+        background-color: #121519;
+        border-radius: 6rem;
       }
-      .mt-lg-super {
-        margin-top: -408px;
+      .mouse:after {
+        background-color: white;
+        width: .375rem;
+        height: .375rem;
+        border-radius: 100%;
+        animation: trackBallSlide 5s linear infinite;
       }
-    }
-  </style>
-<style>
-    .blueprint { padding-top: 2rem; margin-bottom: -4rem; position: relative; z-index: 1; }
-    .blueprint .font-size-large{ font-size: 12px; }
-    .modal-black-lg::before,.modal-white-lg::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-color: rgba(0,0,0,.3);
-    }
-    .modal-white-lg::before {
-      background-color: rgba(255,255,255,.3);
+      @keyframes colorSlide {
+        0% { background-position: 0% 100%; }
+        20% { background-position: 0% 0%; }
+        21% { background-color: #2c333e; }
+        29.99% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        30% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        50% { background-position: 0% 0%; }
+        51% { background-color: #2c333e; }
+        59% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        60% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        80% { background-position: 0% 0%; }
+        81% { background-color: #2c333e; }
+        90%, 100% {
+          background-color: white;
+        }
+      }
+      @keyframes trackBallSlide {
+        0% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        6% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        14% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        15%, 19% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        28%, 29.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        30% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        36% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        44% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        45%, 49% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        58%, 59.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        66% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        74% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        75%, 79% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        88%, 100% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+      }
+      @keyframes nudgeMouse {
+        0%, 30%, 60%, 90% { transform: translateY(0); }
+        20%, 50%, 80% { transform: translateY(8px); }
+      }
+      @keyframes nudgeText {
+        0%, 30%, 60%, 90% { transform: translateY(0); }
+        20%, 50%, 80% { transform: translateY(2px); }
+      }
+      @keyframes colorText {
+        21%, 51%, 81% { color: #2c333e; }
+        30%, 60%, 90% { color: white; }
+      }
+      
+    </style>
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <!-- Customizer generated styles-->
+    <style id="customizer-styles">
+
+    :root
+    {
+      --ar-primary:#a100ff;
+      --ar-primary-rgb:161,0,255;
+      --ar-link-color:#a100ff;
+      --ar-link-hover-color:#8800e6;
+      --ar-warning:#edcb50;
+      --ar-warning-rgb:#edcb50;
+      --ar-warning-rgb:237,203,80;
+      --ar-info:#3f7fca;
+      --ar-info-rgb:#3f7fca;
+      --ar-info-rgb:63,127,202;
+      --ar-success:#3fca90;
+      --ar-success-rgb:#3fca90;
+      --ar-success-rgb:63,202,144;
+      --ar-danger:#ed5050;
+      --ar-danger-rgb:#ed5050;
+      --ar-danger-rgb:237,80,80;
+      --ar-body-font-family:'Inter',sans-serif;
+      --ar-root-font-size:1rem;
+      --ar-border-width:1px;
+      --ar-border-radius:1rem;
+      --ar-border-radius-sm:calc(var(--ar-border-radius)*.75);--ar-link-color:#a100ff;
+      --ar-link-hover-color:#8800e6;
+    }  
+    .btn-primary
+    {
+      --ar-btn-bg:#a100ff;
+      --ar-btn-border-color:#a100ff;
+      --ar-btn-hover-bg:#8800e6;
+      --ar-btn-hover-border-color:#8800e6;
+      --ar-btn-active-bg:#8800e6;
+      --ar-btn-active-border-color:#8800e6;
+      --ar-btn-disabled-bg:#a100ff;
+      --ar-btn-disabled-border-color:#a100ff;
     }
 
-    @media ( min-width: 992px ) {
-      .blueprint .font-size-large{ font-size: 18px; }
+    .btn-warning
+    {
+      --ar-btn-bg:#edcb50;
+      --ar-btn-border-color:#edcb50;
+      --ar-btn-hover-bg:#d4b237;
+      --ar-btn-hover-border-color:#d4b237;
+      --ar-btn-active-bg:#d4b237;
+      --ar-btn-active-border-color:#d4b237;
+      --ar-btn-disabled-bg:#edcb50;
+      --ar-btn-disabled-border-color:#edcb50;
     }
-    @media ( min-width: 1280px ) {
-      .blueprint { top: 3rem; position: absolute; padding-top: 0; margin-bottom: 0;}
-      .blueprint .font-size-large{ font-size: 18px; }
-      .modal-black-lg::before,.modal-white-lg::before{ display: none; }
+    .btn-info
+    {
+      --ar-btn-bg:#3f7fca;
+      --ar-btn-border-color:#3f7fca;
+      --ar-btn-hover-bg:#2666b1;
+      --ar-btn-hover-border-color:#2666b1;
+      --ar-btn-active-bg:#2666b1;
+      --ar-btn-active-border-color:#2666b1;
+      --ar-btn-disabled-bg:#3f7fca;
+      --ar-btn-disabled-border-color:#3f7fca;
     }
-    .brand-icon-contaienr {
-      display: block;
-      border-radius: 0.625rem;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      background-color: #ffffff;
-      padding: 2.25rem; 
-      width: 100%;
-      max-width: 210px;
+    .btn-success
+    {
+      --ar-btn-bg:#3fca90;
+      --ar-btn-border-color:#3fca90;
+      --ar-btn-hover-bg:#26b177;
+      --ar-btn-hover-border-color:#26b177;
+      --ar-btn-active-bg:#26b177;
+      --ar-btn-active-border-color:#26b177;
+      --ar-btn-disabled-bg:#3fca90;
+      --ar-btn-disabled-border-color:#3fca90;
     }
-    .brand-icon-contaienr.youtube { color:  #FF0000; }
-    .brand-icon-contaienr.youtube:hover {
-      background-color: #FF0000;
-      border-color: #FF0000;
-      color: #ffffff;
-    }
-    .brand-icon-contaienr.facebook { color:  #1877F2; }
-    .brand-icon-contaienr.facebook:hover {
-      background-color: #1877F2;
-      border-color: #1877F2;
-      color: #ffffff;
-    }
-    .brand-icon-contaienr.twitter { color:  #1D9BF0; }
-    .brand-icon-contaienr.twitter:hover {
-      background-color: #1D9BF0;
-      border-color: #1D9BF0;
-      color: #ffffff;
-    }
-    .brand-icon-contaienr.instagram { overflow: hidden; position: relative; color: #fff;}
-    .brand-icon-contaienr.instagram svg{ position: relative; z-index: 1; }
-    .brand-icon-contaienr.instagram:hover{
-      border-color: transparent;
-      background-color: #fff;
-    }
-    .brand-icon-contaienr.instagram::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
-      opacity: 0;
-      transition: opacity .3s;
-    }
-    .brand-icon-contaienr.instagram::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background: radial-gradient(179.06% 43.44% at -16.75% 7.2%, #3771C8 0%, #3771C8 12.8%, rgba(102, 0, 255, 0) 100%);
-      opacity: 0;
-      transition: opacity .3s;
-    }
-    .brand-icon-contaienr.instagram:hover::before,.brand-icon-contaienr.instagram:hover::after { opacity: 1; }
-    .brand-icon-contaienr.instagram:hover svg > path:not(:nth-child(3)) { fill: none; }
-
-@media (min-width: 1280px){
-.wsc-header2020 .wsc-header202004-navbar-wondershare .wsc-header2020-navbar-item {
-    padding: 0 3px;
-}}
-
-</style>
 
 
-</head>
+    .btn-danger
+    {
+      --ar-btn-bg:#ed5050;
+      --ar-btn-border-color:#ed5050;
+      --ar-btn-hover-bg:#d43737;
+      --ar-btn-hover-border-color:#d43737;
+      --ar-btn-active-bg:#d43737;
+      --ar-btn-active-border-color:#d43737;
+      --ar-btn-disabled-bg:#ed5050;
+      --ar-btn-disabled-border-color:#ed5050;
+    }
+    .btn-outline-primary
+    {
+      --ar-btn-color:#a100ff;
+      --ar-btn-border-color:#a100ff;
+      --ar-btn-hover-bg:#a100ff;
+      --ar-btn-hover-border-color:#a100ff;
+      --ar-btn-active-bg:#a100ff;
+      --ar-btn-active-border-color:#a100ff;
+      --ar-btn-disabled-color:#a100ff;
+      --ar-btn-disabled-border-color:#a100ff;
+    }
+    .btn-outline-warning
+    {
+      --ar-btn-color:#edcb50;
+      --ar-btn-border-color:#edcb50;
+      --ar-btn-hover-bg:#edcb50;
+      --ar-btn-hover-border-color:#edcb50;
+      --ar-btn-active-bg:#edcb50;
+      --ar-btn-active-border-color:#edcb50;
+      --ar-btn-disabled-color:#edcb50;
+      --ar-btn-disabled-border-color:#edcb50;
+    }
+    .btn-outline-info
+    {
+      --ar-btn-color:#3f7fca;
+      --ar-btn-border-color:#3f7fca;
+      --ar-btn-hover-bg:#3f7fca;
+      --ar-btn-hover-border-color:#3f7fca;
+      --ar-btn-active-bg:#3f7fca;
+      --ar-btn-active-border-color:#3f7fca;
+      --ar-btn-disabled-color:#3f7fca;
+      --ar-btn-disabled-border-color:#3f7fca;
+    }
+    .btn-outline-success
+    {
+      --ar-btn-color:#3fca90;
+      --ar-btn-border-color:#3fca90;
+      --ar-btn-hover-bg:#3fca90;
+      --ar-btn-hover-border-color:#3fca90;
+      --ar-btn-active-bg:#3fca90;
+      --ar-btn-active-border-color:#3fca90;
+      --ar-btn-disabled-color:#3fca90;
+      --ar-btn-disabled-border-color:#3fca90;
+    }
 
-<body>
+    .btn-outline-danger
+    {
+      --ar-btn-color:#ed5050;
+      --ar-btn-border-color:#ed5050;
+      --ar-btn-hover-bg:#ed5050;
+      --ar-btn-hover-border-color:#ed5050;
+      --ar-btn-active-bg:#ed5050;
+      --ar-btn-active-border-color:#ed5050;
+      --ar-btn-disabled-color:#ed5050;
+      --ar-btn-disabled-border-color:#ed5050;
+    }
+    </style>
 
-<header class="psm-header2020">
-  <nav class="psm-header2020-navbar-master psm-header202004-navbar-wondershare">
-    <div class="psm-header2020-container">
-      <div class="psm-header2020-navbar-content">
-        <div class="psm-header2020-navbar-brand"> 
-          <a href="index.html" target="_blank">
-            <img src="assets/liketrex-logo.png" style="height: auto; width: 100px; padding: 10px 0 12px 0;">
-          </a> 
-        </div>
-        
-        <button class="psm-header2020-navbar-collapse-toggle" type="button" aria-expanded="false">
-        <svg class="psm-header2020-navbar-collapse-toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
-          <path d="M4 6H20M20 12L4 12M20 18H4" stroke="white" stroke-width="1.5"></path>
-        </svg>
-        <svg class="psm-header2020-navbar-collapse-toggle-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
-          <path d="M18 18L12 12M6 6L12 12M18 6L12 12M6 18L12 12" stroke="white" stroke-width="1.5"></path>
-        </svg>
-        </button>
-
-        <div class="psm-header2020-navbar-collapse">
-          <ul class="psm-header2020-navbar-nav active_menu">
-            <li class="psm-header2020-navbar-item">
-              <a class="psm-header2020-navbar-link" href="index.html" target="_blank">Home</a> </li>
-
-            <li class="psm-header2020-navbar-item">
-              <a class="psm-header2020-navbar-link" href="contact.html" target="_blank">Contact Us</a> </li>
-            
-          </ul>
-        </div>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
       </div>
     </div>
-  </nav>
-</header>
-  <div class="sub-nav">
-    <div class="container text-black pr-0">
-      <div id="scroll-nav" class="d-flex align-items-center justify-content-center flex-nowrap text-nowrap overflow-auto py-3">
-          <a href="index.html" class="mr-5">Home</a>
-      </div>
-    </div>
-  </div>
-<main class="wsc-main padding-control">
-    <section class="bg-brand pt-3 pb-5 border-radius">
-        <div class="container container-xl pb-lg-5">
-        <div class="row align-items-center text-center pt-lg-0 pt-4">
-            <div class="col-lg-5 py-3 text-lg-left">
-              <h1 class="d-none">About Us</h1>
-              <img src="https://images.wondershare.com/WSCOM2021/brand/about-artfont-top.png" class="px-lg-0 px-5" alt="to enable">
-              <img src="https://images.wondershare.com/WSCOM2021/brand/about-artfont-bottom.png" class="img-fluid px-lg-0 px-4" alt="creative world">
-            </div>
-            <div class="col-lg-7 py-3">
-            <img src="https://images.wondershare.com/WSCOM2021/brand/banner-about.png" class="img-fluid" alt="about wondershare">
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="pt-4 pb-5">
-        <div class="container container-xl">
-            <div class="row">
-                <div class="col-lg-5 py-3 text-md-left text-center">
-                <strong class="h2 family-inherit">About <br class="d-md-block d-none">Liketrex Technology</strong>
-                </div>
-                <div class="col-lg-7 py-3 font-size-super" style="letter-spacing: -.03em;">
-                  Liketrex Technology was founded in Dec 2021. We are based in Pune, Maharashtra. We don’t have investors to impress, so we don’t need a “mission statement.” We enjoy writing and shipping great products that address the needs of ourselves and our customers.<br>
-                  <a target="_blank" href="https://in.linkedin.com/company/liketrex">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                </svg>
+
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+        <div class="dark-mode">
+            <header class="navbar navbar-expand-lg fixed-top" style="background-color: #121519;">
+            <div class="container">
+                <a class="navbar-brand pe-sm-3" href="index.html">
+                    <span class="text-primary flex-shrink-0 me-2">X</span>
+                    Liketrex Technology
                 </a>
+                
+                <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="contact.html">
+                  Get started ->
+                </a>
+
+                <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+                <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="website-design-development.html">
+                        Web Studio
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="digital-marketing-agency.html">
+                        Digital Marketing
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html">
+                            Blogs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="case-studies.html">
+                            Case Studies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-agency.html">
+                          About
+                      </a>
+                      </li>
+                  </ul>
+                <div class="d-sm-none p-3 mt-n3">
+                    <a class="btn btn-primary w-100  mb-1" href="contact.html">
+                      Get started ->
+                    </a>
                 </div>
+                </nav>
             </div>
-            <div class="row">
-                <div class="col-lg-5 py-3 text-md-left text-center">
-                <strong class="h2 family-inherit">Contact <br class="d-md-block d-none">
-                  <a href="mailto: hello@liketrex.com">
-                    hello@liketrex.com
-                  </a>
-                </strong>
-                </div>
-                <div class="col-lg-7 py-3 font-size-super" style="letter-spacing: -.03em;">
-                  <b>Pune, INDIA (HQ)</b><br>
-                  Liketrex Technology, 3rd Floor, A13/306<br>
-                  Sector 17/19, Spine City Rd, Pune, 411062<br>
-                  Call: +91 - 8208 1199 60<br>
-                  <a href="mailto: hello@liketrex.com">
-                    hello@liketrex.com
-                  </a><br>
-                  <a href="mailto: hello@samrajya.com">
-                    hello@samrajya.dev
-                  </a><br>
-                  <a href="samrajya.dev">
-                    www.samrajya.dev
-                  </a><br>
-                  </div>
-            </div>
+            </header>
         </div>
-    </section>
+
+      
+      <!-- Page content-->
     
-    
+      <!-- Contact details-->
+      <section class="bg-secondary py-5">
+        <div class="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5">
+          <!-- Breadcrumb-->
+          <nav aria-label="breadcrumb">
+            <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+            </ol>
+          </nav>
+          <!-- Page title-->
+          <div class="col-6">
+            <h1 class="fw-normal display-2">Let's chat</h1>
+            <h2 class="fw-normal display-3">Start your project or just say hello 👋</h2>
+          </div>
 
-  </main>
+          <p class="fs-lg pt-5 mt-5 mt-sm-5"><em>Our Founder Samrajya will be in touch with you shortly to schedule a call.</em></p>
+          <p class="fs-lg pb-4 mb-2 mb-sm-3"><em>Our website projects typically start at 18,000.</em></p>
+        </div>
+      </section>
 
 
 
-<footer class="psm-footer2020 psm-footer2021">
 
-  <div class="psm-footer2020-bottom psm-footer202004-bottom">
-    <div class="psm-footer2020-container">
-      <div class="psm-footer2020-bottom-content">
-        <div class="psm-footer2020-copyright">
-          <div class="psm-footer2020-copyright-top"> 
-            <b style="margin-right: 10px;"><a class="psm-footer2020-copyright-link" href="contact.html" target="_blank">Contact Us</a></b>
-            <a target="_blank" href="https://in.linkedin.com/company/liketrex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                </svg>
-            </a>
+
+
+      <!-- Contact form-->
+      <section class="bg-primary ignore-dark-mode position-relative py-5">
+        <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 opacity-5"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-15" style="background-image: url(assets/img/landing/conference/noise.png); mix-blend-mode: soft-light;"></div>
+        <div class="container position-relative zindex-2 pt-sm-2 pb-3 py-md-4 py-lg-5">
+          <div class="row align-items-center">
+
+            <div class="col">
+              <div class="card bg-white border-0 p-1 p-sm-2 p-lg-3">
+                <form class="card-body needs-validation p-4" novalidate>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="email">Email</label>
+                    <input class="form-control form-control-lg" type="email" placeholder="Email address" required id="email">
+                    <div class="invalid-feedback">Please provide a valid email address!</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="name">Name</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Your name" required id="name">
+                    <div class="invalid-feedback">Please enter your name!</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="name">Company</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Your Company name" required id="name">
+                    <div class="invalid-feedback">Please enter your Company name!</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="name">Phone</label>
+                    <input class="form-control form-control-lg" type="number" placeholder="Your Phone number" required id="name">
+                    <div class="invalid-feedback">Please enter your Phone number!</div>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label fs-base" for="message">How can we help?</label>
+                    <textarea class="form-control form-control-lg" rows="5" placeholder="Enter your message here..." required id="message"></textarea>
+                    <div class="invalid-feedback">Please enter your message!</div>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="seo">
+                    <label class="form-check-label fs-base" for="seo">SEO Website Audit</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="email-marketing" checked>
+                    <label class="form-check-label fs-base" for="email-marketing">Email Marketing</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="social">
+                    <label class="form-check-label fs-base" for="social">Social Networks</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="content-marketing">
+                    <label class="form-check-label fs-base" for="content-marketing">Content Marketing</label>
+                  </div>
+
+                  <button class="btn btn-lg btn-warning" type="submit">Send request</button>
+                </form>
+              </div>
             </div>
-          <div class="psm-footer2020-copyright-bottom">
-            <p>Copyright © 
-              <span id="copyright-year"></span> 
-              <script> document.querySelector('#copyright-year').outerHTML = new Date().getFullYear() </script> 
-              Liketrex Technology.
-            </p>
+
+
+            <div class="col">
+              <div class="row">
+              <div class="col m-4">
+                <div class="card border-0 h-100">
+                  <div class="card-body">
+                    <h4 class="card-title mb-4">Email</h4>
+                    <ul class="list-unstyled mb-0">
+                      <li class="pb-1 mb-2"><span class="d-block fs-sm text-muted mb-1">Main office</span><a class="nav-link fs-lg p-0" href="mailto:office@example.com">hello@liketrex.com</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col m-4">
+                <div class="card border-0 h-100">
+                  <div class="card-body">
+                    <h4 class="card-title mb-4">Phone</h4>
+                    <ul class="list-unstyled mb-0">
+                      <li class="pb-1 mb-2"><span class="d-block fs-sm text-muted mb-1">Call or Text</span><a class="nav-link fs-lg p-0" href="tel:+919172116005">+91 917 211 6005</a></li>
+                      <li><a class="nav-link fs-lg p-0" href="tel:+918208119960">+91 820 811 9960</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col m-4">
+                <div class="card border-0 h-100">
+                  <div class="card-body">
+                    <h4 class="card-title mb-4">Address</h4>
+                    <p class="fs-lg fw-medium pb-3 mb-3">Sector 17/19, PCNTDA, Spine City St. Pune, MH 411062</p>
+                    <!-- <a class="btn btn-sm btn-outline-primary" href="#"><i class="ai-map-pin me-1"></i>Get directions</a> -->
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="d-none d-lg-flex position-absolute end-0 bottom-0 ms-n4">
+                <div data-aos="fade-left" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">  
+                  <svg class="text-primary" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="58.5" cy="58.5" r="58.5"></circle>
+                  </svg>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="700" data-aos-anchor-placement="bottom-bottom">
+                  <svg class="text-warning" width="117" height="117" viewBox="0 0 117 117" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-2.51516e-06 58.5C-3.52666e-06 70.0702 3.43096 81.3806 9.85902 91.0008C16.2871 100.621 25.4235 108.119 36.113 112.547C46.8025 116.975 58.5649 118.133 69.9128 115.876C81.2607 113.619 91.6844 108.047 99.8657 99.8657C108.047 91.6844 113.619 81.2607 115.876 69.9128C118.133 58.5649 116.975 46.8025 112.547 36.113C108.119 25.4235 100.621 16.2871 91.0009 9.85903C81.3806 3.43096 70.0702 -4.24071e-06 58.5 -5.11423e-06L58.5 58.5L-2.51516e-06 58.5Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="assets/script/header-footer-2020.js"></script> 
-<script src="assets/script/header-footer-2021.js"></script> 
+      </section>      
 
-</body>
+
+
+
+
+
+
+    </main>
+
+    <!-- Footer-->
+    <footer class="footer bg-dark position-relative py-4 py-md-5">
+      <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .02);"></div>
+      <div class="dark-mode container position-relative zindex-2 pt-4 pt-md-2 pt-xl-4 pt-xxl-5">
+        <div class="row py-md-3 mb-4 mb-md-5">
+          <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
+            <h2 class="display-5 fw-normal mb-4 mb-md-5">Ready to make something <span class="fw-bold text-primary">incredible?</span></h2>
+            <div class="d-sm-flex align-items-center">
+            <a class="btn btn-lg btn-primary me-sm-3 me-lg-4" href="contact.html">Get started -></a>
+              <p class="fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Questions? We are here to assist</p>
+            </div>
+          </div>
+          <div class="col-md-5 offset-lg-1 offset-xxl-2 d-flex flex-column">
+            <div class="row">
+              <div class="col">
+                <div class="nav flex-column mb-3 mb-sm-4">
+                  <a class="nav-link px-1 px-0 fw-bold" href="mailto:example@email.com">hello@liketrex.com</a>
+                  <a class="nav-link py-1 px-0" href="tel:+918208119960">+ 91 820 811 9960</a>
+                  <a class="nav-link py-1 px-0" href="tel:+919172116005">+ 91 917 211 6005</a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="nav flex-column mb-3 mb-sm-4">
+                  <a class="nav-link py-1 px-0" href="index.html">Home</a>
+                  <a class="nav-link py-1 px-0" href="website-design-development.html">Web Studio</a>
+                  <a class="nav-link py-1 px-0" href="digital-marketing-agency.html">Digital Marketing</a>
+                  <a class="nav-link py-1 px-0" href="blogs.html">Read Blogs</a>
+                  <a class="nav-link py-1 px-0" href="about-agency.html">About us</a>
+                  <a class="nav-link py-1 px-0" href="contact.html">Contact us</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav mx-n2 mt-auto">
+              <a class="nav-link py-1 px-2 me-2" href="https://instagram.com/liketrex" target="_blank">instagram</a>
+              <a class="nav-link py-1 px-2 me-2" href="https://in.linkedin.com/company/liketrex" target="_blank">linkedin</a>
+              <a class="nav-link py-1 px-2 me-2" href="#">medium</a>
+              <a class="nav-link py-1 px-2" href="#">dribbble</a>
+            </div>
+          </div>
+        </div>
+        <p class="fs-sm pt-3 pb-2 pb-lg-0 mb-0">
+            <span class="opacity-70">&copy; 2022 All rights reserved. Made with </span>
+            <span class='text-danger' style="-webkit-text-fill-color: #ed5050;">❤</span>
+            <span class="opacity-70">by</span>
+            <a class="nav-link d-inline fw-normal p-0" href="https://liketrex.com/" target="_blank" rel="noopener">
+                Liketrex Technology
+            </a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>      
+
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+    <!-- Customizer-->
+    <script>!function(){function e(e){return localStorage.getItem(e)}function r(e,r){localStorage.setItem(e,r)}var t=document.getElementById("customizer-styles"),n=document.getElementById("custom-generated-styles"),o=`\n    :root {\n      ${e("theme-primary")&&`--ar-primary: ${e("theme-primary")};`}\n      ${e("theme-primary-rgb")&&`--ar-primary-rgb: ${e("theme-primary-rgb")};`}\n      ${e("theme-warning")&&`--ar-warning-rgb: ${e("theme-warning")};`}\n      ${e("theme-warning-rgb")&&`--ar-warning-rgb: ${e("theme-warning-rgb")};`}\n      ${e("theme-info")&&`--ar-info-rgb: ${e("theme-info")};`}\n      ${e("theme-info-rgb")&&`--ar-info-rgb: ${e("theme-info-rgb")};`}\n      ${e("theme-success")&&`--ar-success-rgb: ${e("success-info")};`}\n      ${e("theme-success-rgb")&&`--ar-success-rgb: ${e("success-info-rgb")};`}\n      ${e("theme-danger")&&`--ar-danger-rgb: ${e("danger-info")};`}\n      ${e("theme-danger-rgb")&&`--ar-danger-rgb: ${e("danger-info-rgb")};`}\n      ${e("theme-font-family")&&`--ar-body-font-family: ${e("theme-font-family")};`}\n      ${e("theme-root-font-size")&&`--ar-root-font-size: ${e("theme-root-font-size")};`}\n      ${e("theme-body-font-size")&&`--ar-body-font-size: ${e("theme-body-font-size")};`}\n      ${e("theme-border-width")&&`--ar-border-width: ${e("theme-border-width")};`}\n      ${e("theme-border-radius")&&`--ar-border-radius: ${e("theme-border-radius")};`}\n      ${e("theme-border-radius-sm")&&`--ar-border-radius-sm: ${e("theme-border-radius-sm")};`}\n      ${e("theme-border-radius-lg")&&`--ar-border-radius-lg: ${e("theme-border-radius-lg")};`}\n      ${e("theme-border-radius-xl")&&`--ar-border-radius-xl: ${e("theme-border-radius-xl")};`}\n      ${e("theme-border-radius-2xl")&&`--ar-border-radius-2xl: ${e("theme-border-radius-2xl")};`}\n      ${e("theme-primary")&&`--ar-link-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-link-hover-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n    }\n    .btn-primary {\n      ${e("theme-primary")&&`--ar-btn-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-warning {\n      ${e("theme-warning")&&`--ar-btn-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-info {\n      ${e("theme-info")&&`--ar-btn-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-success {\n      ${e("theme-success")&&`--ar-btn-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-danger {\n      ${e("theme-danger")&&`--ar-btn-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n    .btn-outline-primary {\n      ${e("theme-primary")&&`--ar-btn-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-outline-warning {\n      ${e("theme-warning")&&`--ar-btn-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-outline-info {\n      ${e("theme-info")&&`--ar-btn-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-outline-success {\n      ${e("theme-success")&&`--ar-btn-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-outline-danger {\n      ${e("theme-danger")&&`--ar-btn-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n  `,a=o;a=o.replace(/null|\s*(?![A-Z])/g,"");t.append(a),a.split("}").map(function(e){-1!==e.indexOf("{--")&&n.append(e+"}")});var i={root:t.sheet.cssRules[0],primaryBtn:t.sheet.cssRules[1],warningBtn:t.sheet.cssRules[2],infoBtn:t.sheet.cssRules[3],successBtn:t.sheet.cssRules[4],dangerBtn:t.sheet.cssRules[5],primaryOutlineBtn:t.sheet.cssRules[6],warningOutlineBtn:t.sheet.cssRules[7],infoOutlineBtn:t.sheet.cssRules[8],successOutlineBtn:t.sheet.cssRules[9],dangerOutlineBtn:t.sheet.cssRules[10]};function b(){n.innerHTML=i.root.cssText.replace(/null|\s*(?![A-Z])/g,""),n.innerHTML+=-1===i.primaryBtn.cssText.indexOf("{ }")?i.primaryBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningBtn.cssText.indexOf("{ }")?i.warningBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoBtn.cssText.indexOf("{ }")?i.infoBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successBtn.cssText.indexOf("{ }")?i.successBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerBtn.cssText.indexOf("{ }")?i.dangerBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.primaryOutlineBtn.cssText.indexOf("{ }")?i.primaryOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningOutlineBtn.cssText.indexOf("{ }")?i.warningOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoOutlineBtn.cssText.indexOf("{ }")?i.infoOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successOutlineBtn.cssText.indexOf("{ }")?i.successOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerOutlineBtn.cssText.indexOf("{ }")?i.dangerOutlineBtn.cssText.replace(/ /g,""):""}function s(e){var r=0,t=0,n=0;return 4==e.length?(r="0x"+e[1]+e[1],t="0x"+e[2]+e[2],n="0x"+e[3]+e[3]):7==e.length&&(r="0x"+e[1]+e[2],t="0x"+e[3]+e[4],n="0x"+e[5]+e[6]),+r+","+ +t+","+ +n}function c(e,r){var t=parseInt(e.replace("#",""),16),n=Math.round(2.55*r),o=(t>>16)+n,a=(t>>8&255)+n,i=(255&t)+n;return"#"+(16777216+65536*(o<255?o<1?0:o:255)+256*(a<255?a<1?0:a:255)+(i<255?i<1?0:i:255)).toString(16).slice(1)}for(var l=document.querySelectorAll("#theme-colors .color-swatch"),d=0;d<l.length;d++){var m=l[d].querySelector("label"),h=l[d].querySelector('input[type="color"]');colorInput=l[d].querySelector('input[type="text"]'),colorInput.value=e(l[d].id)||colorInput.value,h.value=e(l[d].id)||h.value,m.style.backgroundColor=e(l[d].id)||h.value,h.addEventListener("input",function(e){var n=e.target.parentElement.querySelector("label"),o=e.target.parentElement.querySelector('input[type="text"]'),a=e.target.value;t.sheet.cssRules[d+1];r("theme-"+e.target.id,a),r("theme-"+e.target.id+"-rgb",s(a)),r("theme-"+e.target.id+"-btn-hover-active-border-bg-color",c(a,-10)),n.style.backgroundColor=a,o.value=a,i.root.style.setProperty("--ar-"+e.target.id,a),i.root.style.setProperty("--ar-"+e.target.id+"-rgb",s(a)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",a),"primary"===e.target.id&&(r("theme-link-hover-color",c(a,-10)),i.root.style.setProperty("--ar-link-color",a),i.root.style.setProperty("--ar-link-hover-color",c(a,-10))),b()}),colorInput.addEventListener("change",function(e){var t=e.target.parentElement.querySelector("label"),n=e.target.parentElement.querySelector('input[type="color"]'),o=e.target.value;0!=o.length&&o.startsWith("#")&&(r("theme-"+n.id,o),r("theme-"+n.id+"-rgb",s(o)),r("theme-"+n.id+"-btn-hover-active-border-bg-color",c(o,-10)),t.style.backgroundColor=o,n.value=o,i.root.style.setProperty("--ar-"+n.id,o),i.root.style.setProperty("--ar-"+n.id+"-rgb",s(o)),i[n.id+"Btn"].style.setProperty("--ar-btn-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",o),"primary"===n.id&&(r("theme-link-hover-color",c(o,-10)),i.root.style.setProperty("--ar-link-color",o),i.root.style.setProperty("--ar-link-hover-color",c(o,-10))),b())})}var g=document.getElementById("font-url"),u=document.getElementById("google-font");u.href=e("theme-font-url")||g.value,g.value=e("theme-font-url")||g.value,g.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-url",t),u.href=t});var v=document.getElementById("body-font-family");v.value=e("theme-font-family")||v.value,v.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-family",t),i.root.style.setProperty("--ar-body-font-family",t),b()});var $=document.getElementById("root-font-size");$.value=e("theme-root-font-size")||$.value,$.addEventListener("change",function(e){var t=e.target.value;r("theme-root-font-size",t),i.root.style.setProperty("--ar-root-font-size",t),b()});var y=document.getElementById("body-font-size");y.value=e("theme-body-font-size")||y.value,y.addEventListener("change",function(e){var t=e.target.value;r("theme-body-font-size",t),i.root.style.setProperty("--ar-body-font-size",t),b()});var p=document.getElementById("border-width");p.value=parseInt(e("theme-border-width"))||p.value,p.addEventListener("input",function(e){var t=e.target.value;r("theme-border-width",t+"px"),i.root.style.setProperty("--ar-border-width",t+"px"),b()});var f=document.getElementById("border-radius");f.value=parseFloat(e("theme-border-radius"))||f.value,f.addEventListener("input",function(e){var t=e.target.value;r("theme-border-radius",t+"rem"),i.root.style.setProperty("--ar-border-radius",t+"rem"),b()});var B=document.querySelectorAll('#theme-border-radiuses input[type="number"');for(d=0;d<B.length;d++)B[d].value=e("theme-"+B[d].id+"multiplier")||B[d].value,B[d].addEventListener("input",function(e){var t=e.target.value;r("theme-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),r("theme-"+e.target.id+"multiplier",t),i.root.style.setProperty("--ar-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),b()});var w=document.getElementById("customizer"),x=document.getElementById("customizer-btns");e("theme-customizer-btns")&&x.classList.remove("d-none"),w.addEventListener("change",function(e){r("theme-customizer-btns",!0),x.classList.remove("d-none")}),document.getElementById("customizer-reset-btn").addEventListener("click",function(){for(var e=[],r=0;r<localStorage.length;r++)"theme"==localStorage.key(r).substring(0,5)&&e.push(localStorage.key(r));for(r=0;r<e.length;r++)localStorage.removeItem(e[r]);window.location.reload()});var P=document.getElementById("copy-styles-btn");P.addEventListener("click",function(){var e=document.createRange();e.selectNode(n),window.getSelection().removeAllRanges(),window.getSelection().addRange(e),navigator.clipboard.writeText(n.innerHTML),this.innerHTML='<i class="ai-check me-2 ms-n1"></i>Copied!',setTimeout(function(){P.innerHTML='<i class="ai-copy me-2 ms-n1"></i>Copy styles'},2e3)})}();</script>
+  </body>
 </html>
