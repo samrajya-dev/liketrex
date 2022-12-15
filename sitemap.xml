@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://liketrex.com/</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/contact</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/website-design-development</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/digital-marketing-agency</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/blogs</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/case-studies</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/about-agency</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://liketrex.com/landing-web-studio.html</loc>
+  <lastmod>2022-12-15T18:45:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
